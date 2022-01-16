@@ -9,7 +9,7 @@ describe('Dollar', () => {
     expect(product.amount).toEqual(15)
   })
 
-  it('should return true when dollars of the samen value', () => {
+  it('should return true when dollars of the same value', () => {
     expect(new Dollar(5).equals(new Dollar(5))).toBeTruthy()
     expect(new Dollar(5).equals(new Dollar(6))).toBeFalsy()
   })
